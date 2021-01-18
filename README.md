@@ -8,6 +8,12 @@ This repository aims to give a bootstrap to advanced modding techniques with Son
 
 This barebone mod is empty and it does not do anything. This contains the very minimal information required. It is a good place to start as you can use it as a playground or as a base to create your new mod.
 
+### Sample new object
+
+Shows the basics on how to create a custom object. It will showcase how to load and play an animation, how to load and play a sound effect, set a collision box manually, show the object in the debug object placement and make it act like an enemy.
+
+For a showcase purpose, rather than acting like a completely new entity this will replace the ring object with the custom Bloominator. This will lead to crashes when opening a ring box.
+
 ## Set-up
 
 The expectations by following this guide is to configure a development environment that will allow you to write the game scripts and test them with just a single click, allowing real-time debugging and breakpoint placement in the code.
