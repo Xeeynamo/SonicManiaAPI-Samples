@@ -1,0 +1,6 @@
+[submodule "ManiaAPI"]
+	path = ManiaAPI
+	url = git@github.com:thesupersonic16/ManiaAPI.git
+[submodule "mania-mod-loader"]
+	path = mania-mod-loader
+	url = git@github.com:sonicretro/mania-mod-loader.git
