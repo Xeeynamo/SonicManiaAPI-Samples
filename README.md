@@ -28,6 +28,16 @@ By default when you open the game executable of a game it will be closed and re-
 
 Windows applications are often compiled with ASLR enable, that instructs Windows to re-locate the application memory locations in-memory. This is bad when you do not want to lose the static address of variables and functions by keeping the base address the same at every execution. If you open `SonicMania.exe` with an hex editor, at the offset `0x176` you should notice the byte sequence `40 81 00 00`. That `40` there is the flag that enables the ASLR. Replace it to `00` so you have `00 81 00 00` and save your changes.
 
+### Set the debugger
+
+Right click on your project and go to properties. Under the section Debugging, place the following values:
+
+`Command`: `$(SONICMANIA_PATH)\SonicMania.exe`
+`Command Arguments`: `stage=GHZ;scene=1;console=true;`
+`Working Directory`: `$(SONICMANIA_PATH)`
+
+In this way, you can run Sonic Mania with a deubgger attached and with your mod loaded.
+
 ### Run your mod
 
 An important step is to install [Mania Mod Manager](https://gamebanana.com/tools/6273). When you will run the "play" button on Visual Studio, the mod will be installed but not enabled by default. Ensure to do that from Mania Mod Manager at least for the first time. To run your mod and attach a debugger, just run it pressing F5 from Visual Studio.
